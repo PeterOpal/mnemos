@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/menu_home"
+        />
+    <item
+        android:id="@+id/import_menu"
+        android:icon="@drawable/baseline_upload_file_24"
+        android:title="@string/menu_import" />
+
+    <item
+        android:id="@+id/dummy_menu"
+        android:title=""
+        android:enabled="false"
+        android:iconTint="@color/teal_200"
+        android:checkable="false" />
+
+    <item
+        android:id="@+id/statics_menu"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="@string/menu_activity" />
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/menu_profil" />
+
+</menu>

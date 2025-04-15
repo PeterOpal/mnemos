@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter_black"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="Welcome \nin your\nhelpful\nlearning app!"
+            android:textColor="#FFFFFF"
+            app:background="@drawable/login_text"
+            android:shadowColor="#000000"
+            android:textFontWeight="700"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="#80373737"
+            app:cardCornerRadius="35dp"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/enter_username"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/rounded_edittext_1"
+                    android:ems="10"
+                    android:hint="e.g. Peter"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/select_language"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/languageSelectSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_spinner"
+                    android:padding="9dp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/customize_app_theme"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/appThemeSelectSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_spinner"
+                    android:gravity="center"
+                    android:padding="9dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="@string/set_pomodoro_time"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp" />
+
+                <Spinner
+                    android:id="@+id/pomodoroSelectSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/background_spinner"
+                    android:gravity="center"
+                    android:padding="9dp" />
+
+                <Button
+                    android:id="@+id/loginFinishedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/login_btn"
+                    android:elevation="0dp"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:stateListAnimator="@null"
+                    android:text="@string/start_learning_journey"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F2F2"
+    tools:context=".user_tutorial.TutorialFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/Algorithm"
+                    android:textColor="#000000"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/inter"
+                    android:text="@string/tutorial_3_1"
+                    android:textColor="#6E7183"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_1_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="0"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_1_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/tutorial_3_2"
+                        android:textColor="#6E7183"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_2_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="1"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_2_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/tutorial_3_3"
+                        android:textColor="#6E7183"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_3_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="2"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_3_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter"
+                        android:text="@string/tutorial_3_4"
+                        android:textColor="#6E7183"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="0"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_4_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="3"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_4_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tutorial_3_5"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#6E7183"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_5_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="4"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_5_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tutorial_3_6"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#6E7183"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button_6_point"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="top"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tutorial_buttons"
+                        android:elevation="0dp"
+                        android:padding="2dp"
+                        android:stateListAnimator="@null"
+                        android:text="5"
+                        android:textAllCaps="false"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:id="@+id/textView_6_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tutorial_3_7"
+                        android:fontFamily="@font/inter"
+                        android:textColor="#6E7183"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBoxSampleContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_content" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

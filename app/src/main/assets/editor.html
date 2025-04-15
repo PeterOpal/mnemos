@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="toolbar">
+        <span class="ql-formats">
+          <select class="ql-header">
+            <option value="1">Big</option>
+            <option value="2">Medium</option>
+            <option selected>Normal</option>
+          </select>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-bold"></button>
+          <button class="ql-italic"></button>
+          <button class="ql-underline"></button>
+          <button class="ql-strike"></button>
+        </span>
+        <br>
+        <span class="ql-formats">
+          <select class="ql-color"></select>
+          <select class="ql-background"></select>
+        </span>
+        <br>
+        <span class="ql-formats">
+          <button class="ql-list" value="ordered"></button>
+          <button class="ql-list" value="bullet"></button>
+          <select class="ql-align">
+            <option selected></option>
+            <option value="center"></option>
+            <option value="right"></option>
+            <option value="justify"></option>
+          </select>
+        </span>
+        <span class="ql-formats">
+          <button class="ql-blockquote"></button>
+          <button class="ql-code-block"></button>
+        </span>
+        
+  </div>
+  
+  <div id="editor"></div>
+
+<script src="js/quill.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var quill = new Quill("#editor", {
+        theme: "snow",
+        modules: {
+            toolbar: "#toolbar"
+        }
+    });
+
+    window.getEditorContent = function () {
+        return quill.root.innerHTML;
+    };
+
+    window.setEditorContent = function (html) {
+        quill.root.innerHTML = html;
+    };
+});
+</script>
+
+</body>
+</html>

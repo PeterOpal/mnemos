@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/mathlive-static.css" rel="stylesheet" />
+    <script src="js/mathlive.min.js"></script>
+</head>
+
+<style>
+    math-field::part(virtual-keyboard-toggle) {
+    display: none !important;
+}
+
+</style>
+<body>
+    <math-field
+        id="mathEditor"
+        virtual-keyboard-mode="onfocus"
+        style="width: 100%">
+    </math-field>
+
+    <script>
+        const mathField = document.getElementById("mathEditor");
+
+        mathField.addEventListener("focus", () => { //open custom keyboard
+            mathField.executeCommand("showVirtualKeyboard");
+        });
+
+        function getLatex() {
+            return mathField.value;
+        }
+    </script>
+</body>
+</html>

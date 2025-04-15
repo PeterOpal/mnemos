@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="CATEGORY NAME"
+        android:enabled="false"
+        android:orderInCategory="0" />
+
+    <item
+        android:id="@+id/favourite"
+        android:title="Mark as favourite"
+        android:icon="@drawable/baseline_save_24"
+        android:iconTint="@color/secondary_orange"
+        android:orderInCategory="1" />
+
+    <item
+        android:id="@+id/edit"
+        android:title="@string/edit_category"
+        android:orderInCategory="2" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="@string/delete_category"
+        android:orderInCategory="3" />
+
+</menu>

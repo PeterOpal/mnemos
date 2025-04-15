@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/grey_border"
+    android:backgroundTint="@null"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/text_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <WebView
+            android:id="@+id/block_webview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            tools:ignore="WebViewLayout" />
+
+        <TextView
+            android:id="@+id/tapToEditOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/block_webview"
+            android:layout_alignBottom="@id/block_webview"
+            android:layout_margin="5dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:elevation="4dp"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:padding="4dp"
+            android:text="@string/text_block_tap_to_edit"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/removeTextBlock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#EFEFEF"
+            android:src="@drawable/trash"
+            app:tint="#FF0808" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/formula_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ru.noties.jlatexmath.JLatexMathView
+            android:id="@+id/latexView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:padding="16dip"
+            app:jlmv_alignHorizontal="center"
+            app:jlmv_alignVertical="center"
+            app:jlmv_textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tapToEditOverlayFormula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/latexView"
+            android:layout_alignBottom="@id/latexView"
+            android:layout_margin="5dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:elevation="4dp"
+            android:focusable="false"
+            android:importantForAccessibility="no"
+            android:padding="4dp"
+            android:text="@string/formula_block_tap_to_edit"
+            android:textColor="#000000"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/removeFormulaBlock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#EFEFEF"
+            android:src="@drawable/trash"
+            app:tint="#FF0808" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/block_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:elevation="0dp"
+            android:outlineProvider="none"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/galleryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:text="@string/new_image"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColorLink="#242323"
+                android:textStyle="bold"
+                app:backgroundTint="#6F6E6E" />
+
+            <Button
+                android:id="@+id/appImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:text="@string/app_image"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:backgroundTint="#6F6E6E" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/removeImageBlock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#EFEFEF"
+            android:src="@drawable/trash"
+            app:tint="#FF0808" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="ThemeVariables">
+        <!-- CUSTOM COLOR NAMES -->
+        <attr name="cardBG" format="color" />
+    </declare-styleable>
+</resources>

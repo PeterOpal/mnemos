@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFEB3B"
+    android:backgroundTintMode="add"
+    android:foregroundTint="#C74949"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_vertical"
+            android:id="@+id/importTitleHolder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/breadcrumbs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter"
+                android:text="@string/import_flashcards"
+                android:textColor="#000000"
+                android:textFontWeight="950"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/importInstructions"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_info_24" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/enter_link" />
+
+        <EditText
+            android:id="@+id/sheets_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/rounded_edittext_1"
+            android:ems="10"
+            android:hint="@string/URL"
+            android:inputType="text"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/select_category" />
+
+        <Spinner
+            android:id="@+id/import_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_spinner"
+            android:dropDownHeight="200dp"
+            android:padding="12dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/import_category_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/please_select_category"
+            android:textColor="#FF0000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/select_package" />
+
+        <Spinner
+            android:id="@+id/import_package_spinner"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_spinner"
+            android:dropDownHeight="200dp"
+            android:padding="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/import_package_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/inter"
+            android:text="@string/please_select_a_package"
+            android:textColor="#FF0000"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
